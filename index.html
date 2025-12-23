@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>僕の考えた最強のノート</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- エラー表示エリア -->
+    <div id="error-container"></div>
+    
+    <!-- ローディング表示 -->
+    <div id="loading-overlay" class="hidden">
+      <div class="loading-spinner"></div>
+      <p id="loading-message">読み込み中...</p>
+    </div>
+
+    <!-- 仮想ウインドウオーバーレイ -->
+    <div id="modal-overlay" class="hidden"></div>
+    
+    <!-- 仮想ウインドウコンテナ -->
+    <div id="modal-container" class="hidden">
+      <div id="modal-content"></div>
+    </div>
+
+    <!-- ページコンテンツ -->
+    <main id="page-content"></main>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
